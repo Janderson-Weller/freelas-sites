@@ -1,0 +1,146 @@
+/* Estilização de um menu baseado em background da div com função onclick direto n0 html
+ #slide-conteudo {
+    display: flex;
+    display: block;
+    width: 100%;
+    height: 480px;
+    top: 200px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 2s;
+
+} */
+
+/* .botao-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 60px;
+    font-size: 60px;
+    margin: 0 30px 0;
+    border-radius: 10px;
+    color: rgb(0, 178, 223);
+    background-color: rgb(206, 215, 223);
+}
+
+.botao-slide:hover {
+    background-color: rgb(0, 178, 223);
+    color: rgb(206, 215, 223);
+    cursor: pointer;
+} */
+
+
+/* Define a div principal do slide  */
+.slider {
+    display: block;
+    width: 100%;
+    /* position: absolute; */
+    height: 400px;
+}
+
+/* Esconde todas as divs*/
+.div { 
+    display: none;
+}
+
+/* Div principal que contém os botões do slide */
+.botao-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-top: -50px;
+    gap: 5px;
+    /* background-color: blue; */
+}
+
+/* Lista dos botões */
+.botaoSlide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 40px;
+    padding-top: 10px;
+    background-color: gray;
+    border-radius: 20%;
+}
+
+/* Estilização dos botões */
+.botaoSlide:hover {
+    background-color: rgb(0, 204, 255);
+    color: white;
+    cursor: pointer;
+}
+
+/* Div que mostra */
+.div.divMostrar {
+    display: block;
+    width: 100%;
+    height: 400px;
+    /* background-color: red; */
+}
+
+.div1 {
+    background-image: url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.div2 {
+    background-image: url("../img/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div3 {
+    background-image: url("../img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 650px;
+    height: 300px;
+    padding: 20px;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.banner-container-direito {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 670px;
+    height: 300px;
+    padding: 20px;
+    gap: 10px;
+    float: right;
+}
+
+
+.div h3 {
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(10,23,55,0.5);
+}
+
+.div p {
+    color: white;
+    font-size: 25px;
+    background-color: rgba(10,23,55,0.5);
+}
+
+.div h4 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgba(10,23,55,0.5);
+}

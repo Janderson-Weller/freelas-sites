@@ -1,0 +1,30 @@
+@media (max-width: 980px) {
+    * {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    label {
+        padding: 5px;
+        background-color: #222;
+        color: rgb(103, 212, 0);
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        width: 50px;
+    }
+
+    body {
+        background-color: red;
+        /* background-color: rgb(245, 245, 245); */
+    }
+
+    main {
+        min-height: 100vh;
+    }
+
+}

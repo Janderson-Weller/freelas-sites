@@ -1,0 +1,376 @@
+/* Tira todas as formatações padrão do HTML */
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Aplica a cor branca ao fundo do site */
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+/* Defeine a altura mínima da tela */
+main {
+    min-height: 100vh;
+}
+
+/* Estilização do ícone do WhatsApp que fica fixo na tela */
+.icone-whatsapp a img {
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+}
+
+/* Continuação da estilização anterior */
+.icone-whatsapp a img:hover {
+    background-color: rgba(8, 255, 243, 0.918);
+}
+
+/* Estilização do header que contém os 3 menus */
+.header-principal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Estilização dos 3 menus */
+.header-principal .header-superior , .header-principal .header-meio, .header-principal .header-mostrar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    border-color: rgb(198, 207, 216);
+    background-color: rgb(206, 215, 223);
+}
+
+/* Ocultação do menu que fica fixo após a rolagem da barra */
+.header-principal .header-mostrar {
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    border-color: rgb(206, 215, 223);
+    background-color: rgb(206, 215, 223);
+}
+
+/* Alterando a cor do fundo do primeiro menu */
+.header-principal .header-superior {
+    background-color: #FFFFFF;
+}
+
+/* Ícones do menu central do lado direito */
+.menu-central, .icon-header-right {
+    display: flex;
+}
+
+/* Estilização do clique na opção desejada */
+.menu li a {
+    padding: 10px 15px;
+    color: black;
+}
+
+/* Continuação da atividade anterior */
+.menu li a:hover {
+    color: white;
+    background-color:  rgb(30, 115, 190);;
+    cursor: pointer;
+    border-radius: 20px;
+    border-color:  rgb(30, 115, 190);;
+}
+
+/* Estilização do menu central */
+.menu-central .nav-header-central .menu {
+    display: flex;
+    gap: 30px;
+}
+
+/* Estilização dos ícones do lado esquerdo do menu */
+.header-superior .icon-header-left, .header-meio .icon-header-left, .header-mostrar .icon-header-left {
+    display: flex;
+    margin: 5px 60px;
+}
+
+/* Logo Whatsapp header superior esquerdo */
+.icon-header-left img {
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+}
+
+/* submenu do lado direito */
+.ul-header-rigth {
+    display: flex;
+    gap: 30px;
+    margin-right: 60px;
+}
+
+/* Tamanho das imagens */
+.header-superior img, .header-meio img, .header-mostrar img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Tamanho do logo */
+#logo-pk {
+    width: 100px;
+    height: 60px;
+}
+
+/* Mene central */
+.central-text {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+/* Fonte menu central */
+.central-text h4 {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(30, 115, 190);
+}
+
+/* Fonta menu central */
+.central-text h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0 60px;
+    color: rgb(30, 115, 190);
+}
+ 
+/* Div que contém os serviços prestados */
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 70px 70px;
+    height: 400px;
+    /* background-color: rebeccapurple; */
+}
+ 
+/* Tamanho imagem ao lado da lista dos serviços prestados */
+.services-list img {
+    width: 600px;
+}
+
+/* Fonta dos ícones da lista */
+.service-list ul li {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Estilização dos ícones da lista de 1 a 7 */
+li .number {
+    padding: 7px 14px;
+    color: white;
+    border-radius: 50%;
+    margin: 10px 30px 0 30px;
+    background-color: rgb(0, 138, 223);
+}
+
+/* Serviço Prestado */
+.servicos-info {
+    display: flex;
+    height: 500px;
+    align-items: flex-start;
+    /* background-color: rebeccapurple; */
+    justify-content:center;
+}
+
+/* Banner da área do serviço prestado */
+.servicos-info-banner {
+    display: flex;
+    width: 350px;
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(207, 250, 14); */
+    border: 1px solid rgba(224, 222, 222, 0.9);
+    margin: 0 20px;
+}
+
+/* Área saiba mais */
+.div-saiba-mais  {
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    padding: 10px 15px;
+    color: white;
+    background-color: rgb(0, 178, 223);
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+/* Estilização da área anterior */
+.div-saiba-mais:hover {
+    cursor: pointer;
+    background-color: rgb(15, 71, 85);
+}
+
+/* Estilização da fonte da área anterior */
+.text-service {
+    margin: 20px;
+}
+/* Título da área anterior */
+.text-service h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.text-service p {
+    font-size: 18px;
+}
+
+/* Botão WhatsApp central da página*/
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 -10px -10px; */
+    height: 100px;
+    background-image: url("../img/fundo-whats.png");
+}
+
+/* Botão anterior */
+.whatsapp span {
+    color: white;
+    font-size: 20px;
+    padding: 20px 60px;
+    border-radius: 4px;
+    background-color: rgb(54, 219, 54);
+}
+
+.whatsapp span:hover {
+    /* transform: scale(1.1); */
+    color: rgb(54, 219, 54);
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Div que contém a lista de parceiros */
+.text-parceiros, .img-parceiros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    height: 200px;
+}
+
+.text-parceiros h3, .text-parceiros h4 {
+    text-align: center;
+}
+
+/* Traço que indica a divisão da página em algums partes */
+.p-divisor {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(173, 14, 212);
+}
+
+/* Título do div parceiros */
+.text-parceiros h3, .div-header-quem-somos h3 {
+    font-size: 50px;
+}
+
+/* Lista que com as imagens dos parceiros */
+.img-parceiros ul {
+    /* background-color: paleturquoise; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Tamanho das imagens dos parceiros */
+.logo-parceiro img {
+    width: 250px;
+    height: 60px;
+}
+
+/* Área quem somos informações */
+.text-quem-somos-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    /* background-color: blue; */
+}
+
+.div-header-quem-somos h3, .div-header-quem-somos h4 {
+    text-align: center;
+}
+
+/* Estilizaççao da div principal da área quem somos, colocando os ícone em forma de coluna */
+.div-header-quem-somos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div-text-quem-somos{
+    display: flex;
+}
+
+.text-quem-somos {
+    width: 500px;
+    margin: 20px 30px;
+    font-size: 20px;
+}
+
+/* Área com as informações das redes sociais da empresa */
+.info-midia-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: cornflowerblue;
+    height: 600px;
+}
+
+.midia-title {
+    width: 400px;
+    height: 300px;
+}
+
+.midia-title h3 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.pk p, .pk {
+    height: 300px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.footer-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: black;
+    background-color: rgb(206, 215, 223);;
+}
+
+.icons-footer {
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.icons-footer a img {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
